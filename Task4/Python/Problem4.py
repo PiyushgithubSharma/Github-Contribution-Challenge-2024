@@ -31,6 +31,4 @@ class Solution:
         result_binary = bin(result)[2:]
         
         return result_binary
-a = Solution()
-print(a.addBinary(1010,1011))
 
