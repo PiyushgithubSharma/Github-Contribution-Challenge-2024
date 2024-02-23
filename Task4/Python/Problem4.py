@@ -22,12 +22,15 @@ Each string does not contain leading zeros except for the zero itself.
 #Do not change class name and method name.
 
 class Solution:
-    def addBinary(self, a: str, b: str) -> str:
-        num1 = int(a, 2)
-        num2 = int(b, 2)
+    def addBinary(self, a: bin, b: bin) -> bin:
+        num1 = bin(a, 2)
+        num2 = bin(b, 2)
         
         result = num1 + num2
-
+        
         result_binary = bin(result)[2:]
         
         return result_binary
+a = Solution()
+print(a.addBinary(1010,1011))
+
